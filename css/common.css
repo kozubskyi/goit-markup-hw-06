@@ -108,6 +108,28 @@ svg,
   transition: var(--site-transition);
 }
 
+.logo,
+.site-nav,
+.e-mail,
+.tel,
+svg,
+.client-link,
+.physical-address,
+.social-network-link,
+.footer-social-network-link,
+.backdrop,
+.form-input,
+.form-textarea,
+.btn,
+.footer-btn,
+.modal-btn-close,
+.agreement-conditions,
+.submit-btn,
+.filter-btn,
+.item-full-description {
+  outline-color: var(--hover-color);
+}
+
 /* HEADER */
 
 .header {
@@ -220,7 +242,8 @@ svg,
 }
 
 .footer-logo-address {
-  width: 270px;
+  /* width: 270px; */
+  width: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
 
@@ -260,7 +283,8 @@ address {
 }
 
 .footer-social-networks {
-  width: 270px;
+  /* width: 270px; */
+  width: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
 
@@ -292,7 +316,8 @@ address {
 }
 
 .mailing {
-  width: 570px;
+  width: calc((100% - 1 * 30px) / 2);
+  margin-left: auto;
 }
 
 .footer-form {
@@ -310,7 +335,7 @@ address {
 }
 
 .footer-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-family: "roboto", sans-serif;
   color: white;
