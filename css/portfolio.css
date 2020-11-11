@@ -63,6 +63,10 @@
   margin-bottom: 0px;
 }
 
+.portfolio-link:focus {
+  outline-color: var(--hover-color);
+}
+
 .item-img {
   display: flex;
   position: relative;
