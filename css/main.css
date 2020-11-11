@@ -32,6 +32,7 @@
   letter-spacing: 0.06em;
   text-align: center;
   background-color: var(--hover-color);
+  outline-color: var(--hover-color);
   border: none;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -175,6 +176,8 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition: var(--site-transition);
 }
 
 .social-network-icon {
@@ -184,6 +187,7 @@
 .social-network-link:hover,
 .social-network-link:focus {
   background-color: var(--hover-color);
+  outline-color: var(--hover-color);
 }
 
 .social-network-link:hover .social-network-icon,
@@ -218,6 +222,8 @@
   height: 90px;
   border: 1px solid var(--icons-gray);
   border-radius: 4px;
+
+  transition: var(--site-transition);
 }
 
 .client-icon {
@@ -227,11 +233,13 @@
 .client-link:hover,
 .client-link:focus {
   border-color: var(--hover-color);
+  outline-color: var(--hover-color);
 }
 
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--hover-color);
+  outline-color: var(--hover-color);
 }
 
 /* МОДАЛЬНОЕ ОКНО */
@@ -248,7 +256,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  /* transition: var(--site-transition); - прописано в common.css */
+  transition: var(--site-transition);
   z-index: 2;
 }
 
@@ -285,6 +293,7 @@
 .modal-btn-close:hover,
 .modal-btn-close:focus {
   fill: var(--hover-color);
+  outline-color: var(--hover-color);
 }
 
 .form-title {
@@ -324,6 +333,7 @@
 .form-field:hover .form-icon,
 .form-field:focus .form-icon {
   fill: var(--hover-color);
+  outline-color: var(--hover-color);
 }
 
 .comment-field {
@@ -341,6 +351,11 @@
   letter-spacing: 0.01em;
 }
 
+.form-input:focus,
+.form-textarea:focus {
+  outline-color: var(--hover-color);
+}
+
 .form-input {
   padding-left: 40px;
 }
@@ -356,6 +371,7 @@
 .form-field:hover .form-textarea,
 .form-field:focus .form-textarea {
   border: 1px solid var(--hover-color);
+  outline-color: var(--hover-color);
 }
 
 .form-textarea::placeholder {
@@ -386,10 +402,12 @@
   background-image: url(../icons/check-mark.svg);
   background-color: var(--hover-color);
   border: 2px solid var(--hover-color);
+  outline-color: var(--hover-color);
 }
 
 .agreement-conditions {
   color: var(--hover-color);
+  outline-color: var(--hover-color);
   text-decoration: underline;
 }
 
