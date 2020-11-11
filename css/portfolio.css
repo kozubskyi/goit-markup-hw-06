@@ -63,6 +63,7 @@
   margin-bottom: 0px;
 }
 
+.portfolio-link:hover,
 .portfolio-link:focus {
   outline-color: var(--hover-color);
 }
